@@ -1,0 +1,486 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+ 
+   background-color: #efefef;
+   
+  
+  
+}
+.Header{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; 
+  justify-content: space-between; 
+  font-size: 2rem;
+  padding: 20px  50px 0; 
+}
+@media (max-width:760px) {
+ .Header{
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 4px 0;
+  /* gap: 1rem; */
+ } 
+}
+.Intro{
+  
+  background: rgb(125 80 49);
+  color: #fff;
+  
+  
+}
+.Description{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 50px 0;
+  
+}
+@media (max-width:760px) {
+  .Description{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin:30px;
+  }
+
+}
+
+.describe{
+  text-align: left;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* padding-top: -60px; */
+ 
+}
+
+
+h2{
+  font-size: 3rem;
+  margin-bottom: 15px;
+  width: 350px; 
+}
+p{
+  font-size: 1.4rem;
+  width: 300px;
+  line-height: 1.4rem;
+  letter-spacing: .1rem;
+  text-align: justify;
+  padding-right: 20px;
+  margin-right: 40px;
+}
+span{
+  display: flex;
+  justify-content: flex-start;
+  gap: 5px;
+  margin-top: 30px;
+  margin-right: 150px;
+}
+span button{
+  background: transparent;
+  padding: 12px 15px;
+  outline: none;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 35px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  
+}
+button:hover, button:focus{
+  background: rgb(247, 196, 32);
+  color: #333;
+  border: none;
+}
+.rotate-img{
+  width: 45%;
+  height: 700px;
+  display: flex;
+}
+@media (max-width:760px) {
+  .rotate-img{
+   flex-direction: column;
+    align-items: center;
+    
+  }
+}
+.Nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+@media (max-width:350px) {
+  .Nav ul{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
+}
+.Nav ul li{
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+  padding: 0 20px;
+  font-size: 1.4rem;
+}
+.Nav li:hover, 
+.Nav li:focus {
+ text-decoration: underline;
+text-decoration-color:rgb(247, 196, 32);
+text-underline-offset: 0.6rem ;
+transition: --offset 500ms, text-decoration-color 300ms;
+cursor: pointer;
+}
+.Image{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 3rem;
+}
+.Image:hover{
+  cursor: pointer;
+}
+.SectionTwo{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 60px;
+  padding-left: 40px;
+  flex-wrap: wrap;
+}
+@media (max-width:760px) {
+  .SectionTwo{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+  }
+}
+.two{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items:flex-start;
+  color: #000;
+  text-align: left;
+   justify-content: left;
+   flex-wrap: wrap;
+}
+@media (max-width:760px) {
+  .two{
+    justify-content: center;
+    align-items: center;
+    
+  }}
+
+.two h3{
+   width: 30%; 
+  font-size: 1.4rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;  
+}
+@media (max-width:760px) {
+  .two h3{
+    width: 60%;
+    
+    
+  }}
+
+.two p{
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+@media (max-width:760px) {
+  .two p{
+    width: 60%;
+    
+    
+  }}
+
+.SectionTwo button{
+  padding: 10px 15px;
+  background: #000;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+@media (max-width:760px) {
+  .SectionTwo button{
+  margin-right: 100px;
+    
+  }}
+
+ .SectionTwo img:hover, .SectionTwo img:focus{
+ padding: -20px 30px 40px ;
+ border: 2px solid rgb(125 80 49);
+ cursor: pointer;
+} 
+.SectionThree{
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items:center ;
+   
+}
+ @media (max-width:760px) {
+  .SectionThree{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.SectionThree .why {
+    display: flex;
+    flex-direction: column;
+   padding: 2rem;
+
+}
+@media (max-width:760px) {
+  .SectionThree .why{
+    align-items: center;
+    justify-content: center;
+   
+   
+  }
+
+}
+
+.SectionThree h3{
+  font-size: 2rem;
+  padding-right: 60px;
+  letter-spacing: .1rem;
+}
+.SectionThree p{
+  width: 45%;
+  margin-bottom: 20px;
+  align-items: center;
+ text-align: left;
+  font-size: 1.4rem;
+ line-height: 1.4rem;
+
+}
+.SectionThree ul{  
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap; 
+  
+  
+}
+@media (max-width:760px) {
+  .SectionThree ul{
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width:350px) {
+  .SectionThree ul{
+    flex-direction:column;
+    flex-wrap: nowrap;
+    
+  }}
+.SectionThree li{
+  width: 45%;
+   /* margin-left: 25px;     */
+   padding: 0 2rem;
+}
+
+@media (max-width:350px) {
+  .SectionThree ul li{
+    width: 100%;
+    
+  }}
+.SectionThree li h5{
+text-align: left;
+font-size: 1.4rem;
+}
+ .SectionThree li p{
+  width: 90%;
+  text-align: left;
+ }
+.SectionThree li .icons{
+  display: flex;
+  justify-content: left;
+  margin-bottom: 5px; 
+}
+/* .SectionThree img{
+} */
+.SectionFour{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   margin: 60px ; 
+}
+@media (max-width:760px) {
+  .SectionFour{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.IMG{
+   width: 50%; 
+  padding-top: 30px;
+}
+@media (max-width:760px) {
+  .IMG{
+    display: none;
+  }
+}
+
+.NOTE{
+  width: 40%; 
+   padding-right: 240px; 
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+@media (max-width:760px) {
+.NOTE{
+  padding-right: 0;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+
+}
+}
+.NOTE h3{
+  width: 80%;
+  font-size: 1.4rem;
+  letter-spacing: .1rem;
+  text-align: left;
+  margin: 20px 0;
+}
+@media (max-width:760px) {
+  .NOTE h3{
+    /* width: 0%; */
+  }
+}
+.NOTE p{
+  text-align: left;
+  width: 70%;
+  font-size: 1.3rem;
+}
+.NOTE ul {
+  display: flex;
+   width:80%; 
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+@media (max-width:760px) {
+  .NOTE ul{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.NOTE ul li {
+  width: 40%;
+  font-size: 1.3rem;
+  text-align: left;
+ 
+   padding: 5px 25px; 
+   margin-left: 15px;
+   gap: 20px;
+}
+.NOTE button{
+  width: 100px;
+  padding: 10px ;
+  background: #000;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  margin-left: 100px;
+}
+/* @media (max-width:760px) {
+  /* .NOTE button{
+    /* margin-left:150px ; */
+   
+
+
+
+
+
+/* .secondImage{
+  position: absolute;
+  top: 1500px;
+  left: 640px;
+}
+@media (max-width:760px) {
+  .secondImage{
+    display: none;
+  } */
+
+  .Sectionfive{
+    margin-top: -80px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 120px;
+}
+@media (max-width:760px) {
+  .Sectionfive{
+    flex-direction: row;
+    justify-content: center;
+  }
+  @media (max-width:400px) {
+    .Sectionfive {
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+    }
+  }
+} 
+.Sectionfive li{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+@media (max-width:760px) {
+  .Sectionfive li{
+    flex-direction: column;
+    
+  }
+}
+
+.Sectionfive li .label{
+  padding-top: 50px;
+}
+.Sectionfive  li .label h4{
+   font-size: 1.4rem;
+  text-align: left;
+}
+.Sectionfive li .label p{
+  width: 250px;
+  text-align: left;
+}
+
+
+  
